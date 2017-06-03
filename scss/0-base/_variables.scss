@@ -1,0 +1,15 @@
+@mixin responsive($breakpoint) {
+    @media (max-width: $breakpoint) {
+      @content;
+    }
+}
+@mixin responsivetofrom($from,$to) {
+    @media (min-width: $from) and (max-width:$to) {
+      @content;
+    }
+}
+@mixin responsivecustom($custom) {
+    @media ($custom) {
+      @content;
+    }
+}
